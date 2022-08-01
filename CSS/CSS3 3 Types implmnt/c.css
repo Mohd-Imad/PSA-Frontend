@@ -1,0 +1,27 @@
+h1,h4{
+    background-color: aquamarine;
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 4px double red;
+
+}
+
+p{
+    background-color: bisque;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 3px 2px;
+}
+/* CSS Class Selector */
+.para2{
+    background-color: lightgreen;
+    color: red;
+    margin: 4px 2px;
+    padding: 2px 3px;
+}
+/* CSS ID Selector */
+#para3{
+    background-color: lightsalmon;
+    color: blue;
+}

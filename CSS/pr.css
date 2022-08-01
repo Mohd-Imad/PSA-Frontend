@@ -1,0 +1,25 @@
+h1{
+    background-color: aqua;
+    color: black;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 6pt;
+    margin-bottom: 1in;
+}
+h2{
+    background-color: black;
+    color: aqua;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 6pt;
+    text-align: justify;
+    margin-right: 0in;
+    padding-top: 5pt;
+}
+p{
+    background-color: antiquewhite;
+    color: black;
+    font-size: medium;
+}

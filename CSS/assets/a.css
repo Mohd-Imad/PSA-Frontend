@@ -1,0 +1,12 @@
+h1,p{
+background-color: red;
+color: black;
+font-family: 'Times New Roman', Times, serif;
+font-style: normal;
+}
+
+h2{
+    background-color: blue;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
