@@ -1,4 +1,4 @@
-/* Divisible */
+/*WAP to check the given number is divisible by 7 or not*/
 
 var num=84;
 

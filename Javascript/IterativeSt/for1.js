@@ -3,7 +3,7 @@
 
 /* let i=0 --initialization
 i<=10;     --condition
-i=i+2      --incr/decr*/
+i=i++      --incr/decr*/
 
 for (let i=0; i < 10; i++) {
     console.log(i);
