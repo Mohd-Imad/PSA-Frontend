@@ -19,7 +19,13 @@ function changeBg() {
     document.getElementById('onfoc').style.backgroundColor="aqua"
 }
 
-function lowToUp() {
-    var x = document.getElementById('onblr')
-    x.value = x.value.toUpperCase();
+
+/* function lowerToUpper() {
+    let text= document.getElementById('onblr').value =text.toUpperCase();
+} */
+
+
+function lowerToUpper() {
+    let text=document.getElementById('onblr').value
+    document.getElementById('onblr').value= text.toUpperCase();
 }
