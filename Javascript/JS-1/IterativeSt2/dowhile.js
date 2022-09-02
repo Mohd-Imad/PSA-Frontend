@@ -1,6 +1,8 @@
+//do while loop executes do part first then checks the while condition
+
 let i = 0
 
-do{
+do{                                      
     console.log(i);
     i=i+2;
 }

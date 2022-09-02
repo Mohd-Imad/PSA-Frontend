@@ -5,6 +5,7 @@ let employee = {
     name: "Rahul",
     sal: 45000
 }
-for (key in employee) {               
-    console.log(employee[key])
+for (key in employee) {     
+    // console.log(key)                           this prints only keys---- id, name, sal       
+    console.log(employee[key])                    //this prints key values
 } 
