@@ -1,9 +1,7 @@
 // Object Destructuring
 
 
-const person={
-    p
-    
+const person={    
     name: "ABCD",
     age: 20,
     gender: "Male",
