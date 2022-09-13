@@ -1,3 +1,11 @@
+// React Component--- a piece of reusable UI code, component describes UI
+
+/* React Component rules--- always should start from Uppercase letter 
+                            file name and component name should be same either function or class component*/
+
+// 2 ways to create Components-----  1. Function Component    2. Class Component
+
+//function component
 function App(){
    return <div>
         <h1>Heading1</h1>
