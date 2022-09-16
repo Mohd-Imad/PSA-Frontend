@@ -1,12 +1,14 @@
 import ReactDOM  from "react-dom"
 import Navbar from './Navbar/Navbar'
-// import CompA from './Components/CompA'
-import CompClassA from "../../React-Backup/class-3-Props Ex/Props Ex-2/src/Components/CompClassA"
+    import Message from "../../React-Backup/class-4-State/State Ex-2-success/Message"
+    // import Message from "./State/Message-Error"
+    // import Message from "./State/MessageClass-ForceUpdate"
 function App(){
     return <div>
         <Navbar />
-        {/* <CompA /> */}
-        <CompClassA />
+        <Message />
+        {/* <Message-Error /> */}
+        {/* <MessageClass-ForceUpdate /> */}
     </div>
 }
 
