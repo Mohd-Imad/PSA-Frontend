@@ -9,8 +9,8 @@ import Register from "./Form/Reg Form/Register"
 function App(){
     return <div>
         <Navbar />
-        {/* <Login />
-        <LoginBootstrap /> */}
+        {/* <Login /> */}
+        {/* <LoginBootstrap /> */}
         {/* <Registration /> */}
         <Register />
     </div>

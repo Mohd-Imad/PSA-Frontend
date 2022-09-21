@@ -1,3 +1,5 @@
+// using one event handler for all inputs
+
 import React, { Component } from 'react'
 
 class Register extends Component {
@@ -8,22 +10,11 @@ class Register extends Component {
         gender : "",
         DOB : "",
     }
-    nameHandler = (event1)=>{  
-        // console.log(event1.target.value);
-        this.setState({name : event1.target.value })
-      }
-    emailHandler = (event2)=>{  
-        this.setState({email : event2.target.value})
-      }
-    mobileHandler = (event3)=>{ 
-        this.setState({mobile : event3.target.value})
-       }
-    dobHandler = (event4)=>{  
-        this.setState({DOB : event4.target.value})
-      }
-    genderHandler = (event5)=>{  
-        this.setState({gender : event5.target.value})
-      }
+    inputHandler = (event)=>{
+        this.setState({
+            [event.target.name]  : event.target.value
+        })
+    }
     RegisterHandler = (event)=>{
         event.preventDefault()
         console.log(this.state);
@@ -42,21 +33,21 @@ class Register extends Component {
                         <div className="card-body">
                             <form onSubmit={this.RegisterHandler}>
                                 <div className="form-group">
-                                    <input type="text" className='form-control' onChange={this.nameHandler} placeholder='Name' />
+                                    <input type="text" className='form-control'name="name" onChange={this.inputHandler} placeholder='Name' />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className='form-control' onChange={this.emailHandler} placeholder='Email ID' />
+                                    <input type="email" className='form-control' name='email' onChange={this.inputHandler} placeholder='Email ID' />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className='form-control' onChange={this.mobileHandler} placeholder='Mobile' />
+                                    <input type="number" className='form-control' name='mobile' onChange={this.inputHandler} placeholder='Mobile' />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className='form-control' onChange={this.dobHandler} placeholder='Date of Birth' />
+                                    <input type="date" className='form-control' name='DOB' onChange={this.inputHandler} placeholder='Date of Birth' />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor='option'>Gender : <br /> 
-                                    Male<input type="radio" className='form-control form-control-sm' onChange={this.genderHandler} name='option' />
-                                    Female<input type="radio" className='form-control form-control-sm' onChange={this.genderHandler} name='option' /></label>
+                                    <label htmlFor='gender'>Gender : <br /> 
+                                    Male<input type="radio" className='form-control form-control-sm' onChange={this.inputHandler} name='gender' />
+                                    Female<input type="radio" className='form-control form-control-sm' onChange={this.inputHandler} name='gender' /></label>
                                 </div>
                                 <input type="submit" className='btn btn-warning' value="Register" />
                             </form>
