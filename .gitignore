@@ -7,3 +7,7 @@ new-react/src/Components/CompA.jsx
 new-react/src/Components/CompClassA.jsx
 new-react/src/Components/CompB.jsx
 new-react/src/Components/CompClassB.jsx
+new-react/src/Employee/Employee.jsx
+new-react/src/Message/Message.jsx
+new-react/src/Product/Product-1.jsx
+new-react/src/Product/Product.jsx

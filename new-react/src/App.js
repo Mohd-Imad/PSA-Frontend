@@ -1,14 +1,18 @@
 import ReactDOM  from "react-dom"
+// import Registration from "./Form/Reg Form/Registration"
 import Navbar from './Navbar/Navbar'
-// import Product from "./Product/Product"
-import Message from "./Message/Message"
-import Employee from "./Employee/Employee"
+// import Login from "./Form/Login Form/Login"
+// import LoginBootstrap from "./Form/Login Form/LoginBootstrap"
+import Register from "./Form/Reg Form/Register"
+
+
 function App(){
     return <div>
         <Navbar />
-        {/* <Product /> */}
-        {/* <Message /> */}
-        < Employee />
+        {/* <Login />
+        <LoginBootstrap /> */}
+        {/* <Registration /> */}
+        <Register />
     </div>
 }
 
