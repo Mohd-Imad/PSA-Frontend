@@ -2,10 +2,10 @@
 
 import React from "react";
 import Navbar from "./Navbar/Navbar";
-import Home from "./Components/Home";
-import About from './Components/About'
-import Services from "./Components/Services";
-import Contact from './Components/Contact'
+import Users from './Components/Users/Users'
+import Products from "./Components/Products/Products";
+import ProductsTable from "./Components/Products/ProductsTable";
+import Employees from './Components/Employees/Employees';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/home" element={<Home />}/>
-            <Route path="/about" element={<About />}/>
-            <Route path="/services" element={<Services />}/>
-            <Route path="/contact" element={<Contact />}/>
+            <Route exact path="/users" element={<Users />}/>
+            <Route exact path="/products" element={<Products />}/>
+            <Route exact path="/productstable" element={<ProductsTable />}/>
+            <Route exact path="/employees" element={<Employees />}/>
           </Routes>
         </Router>
     </div>

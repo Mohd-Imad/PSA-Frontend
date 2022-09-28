@@ -1,7 +1,7 @@
 // Routing Example using react-router-dom version 5.3.3
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './Navbar/Navbar'
+import Navbar from '../../new-react/src/Navbar/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
 import Services from "./Components/Services";
