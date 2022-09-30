@@ -17,3 +17,10 @@ new-react/src/Components/Contact.jsx
 new-react/src/Components/Home.jsx
 new-react/src/Components/Services.jsx
 
+new-react/src/Components/Employees/Employees.jsx
+new-react/src/Navbar/Navbar.jsx
+new-react/src/Navbar/NavbarClass.jsx
+new-react/src/Components/Products/Products.jsx
+new-react/src/Components/Products/ProductsTable.jsx
+new-react/src/Components/Users/Users-backup.jsx
+new-react/src/Components/Users/Users.jsx
