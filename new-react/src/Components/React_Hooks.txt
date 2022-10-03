@@ -1,0 +1,5 @@
+//React Hooks -- In a function component, component's data updation wasn't possible till the react version 16.8, 
+               but after that version, data updation is possible using React Hooks concept (useState)
+// useState is similar to the class component's setState method
+// difference b/w setState & useState -- 1: setState always an object..... but useState can be string, var, array 7 obj also
+                                         2: in setstate auto-merge-option is available.... in useState auto-merge-option is NA
