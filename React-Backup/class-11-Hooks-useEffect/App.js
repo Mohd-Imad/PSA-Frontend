@@ -1,15 +1,12 @@
 import react from 'react'
 import Navbar from './Navbar/Navbar'
-import ContactApp from './Contact/ContactApp'
+import Products from './Products/Products'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-
 let App = ()=>{
     return <div>
         <Router>
         <Navbar />
-            <Routes>
-                <Route exact path="/contactApp" element={<ContactApp />} />
-            </Routes>
+            <Products />
         </Router>
     </div>
 }
