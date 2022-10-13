@@ -1,24 +1,24 @@
 import React from 'react'
-import {decrAction, incrAction} from '../redux/counter/counter.action'
-import {useDispatch, useSelector} from 'react-redux'
+import { incrAction,decrAction } from '../redux/counter/counter.action'
+import { useDispatch, useSelector} from 'react-redux'
 
 const Counter = () => {
-  let dispatch = useDispatch() 
   let counter = useSelector((state)=>{
-    return state;
-  }) 
+    return state.count;                      //count----raji
+  })
+  let dispatch = useDispatch()
   let decrHandler = ()=>{
-    //dispatch action
     dispatch(decrAction())
-  }  
+  }
   let incrHandler = ()=>{
     dispatch(incrAction())
-  }  
+  }
   return (
     <div>
-        <h1>QTY : {counter} </h1>
-        <button onClick={decrHandler}>Decr</button>
-        <button onClick={incrHandler}>Incr</button>
+      <pre>{JSON.stringify(counter.qty)}</pre>
+      <h1>Counter Component : {counter.qty}</h1>
+      {counter.qty<=0?<button disabled onClick={decrHandler}>DECR</button>:<button onClick={decrHandler}>DECR</button>}
+      <button onClick={incrHandler}>INCR</button>
     </div>
   )
 }
