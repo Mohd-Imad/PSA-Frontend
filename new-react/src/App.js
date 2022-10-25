@@ -3,13 +3,13 @@ import react from 'react'
 // import ContactApp from './Contact/ContactApp'
 // import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { Provider } from 'react-redux'
-import Message from './Message/Message'
-import {store} from './redux/store'
+import ContactApp from './Contact/ContactApp'
+
 
 let App = ()=>{
     return <div>
-        <Provider store={store}>
-            <Message />
+        <Provider>
+            <ContactApp />
         </Provider>
     </div>
 }
