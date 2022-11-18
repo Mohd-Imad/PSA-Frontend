@@ -1,4 +1,4 @@
-// This is react application's main file
+/* // This is react application's main file
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -14,4 +14,16 @@ import App from './App';                                     //enabling bootstra
 // ReactDOM.render(<h1>Welcome To React</h1> , document.getElementById('test-1'))                               //passing argument as a tag
 // ReactDOM.render(<div><h1>Welcome To React</h1><h2>React </h2></div> , document.getElementById('test-1'))     //passing argument as an element having number of tags
 ReactDOM.render(<App />, document.getElementById('test-1'))                                                      //passing argument as function component
+ */
 
+import React from "react";
+import ReactDOM  from "react-dom/client";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById('test-1'))
+
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+)
