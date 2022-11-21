@@ -40,6 +40,12 @@ let validation = ()=>{
     if(mobile===""){
         mobileMsg.innerHTML = "Please Enter Mobile Number"
     }
+    else if(mobile.length<10 || mobile.length>10){
+        mobileMsg.innerHTML = "Enter a Valid Mobile Number"
+    }
+    else{
+        mobileMsg.innerHTML = ""
+    }
 
     //passwordValidation
     if(password===""){
@@ -50,6 +56,9 @@ let validation = ()=>{
     }
     else if(password.length>8){
         passMsg.innerHTML = "Password shouldn't exceed 8 characters"
+    }
+    else{
+        passMsg.innerHTML = ""
     }
 }
 
