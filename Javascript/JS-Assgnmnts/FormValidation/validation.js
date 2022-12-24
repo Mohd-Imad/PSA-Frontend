@@ -1,6 +1,6 @@
 
-let validation = ()=>{
-    event.preventDefault()
+let validation = (event)=>{
+      event.preventDefault(s)
     let name = document.getElementById('name').value
     let email = document.getElementById('email').value
     let mobile = document.getElementById('mobile').value
