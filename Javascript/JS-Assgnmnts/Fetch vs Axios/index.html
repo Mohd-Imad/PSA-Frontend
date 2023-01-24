@@ -7,7 +7,37 @@
     <title>Fetch v/s Axios</title>
 </head>
 <body>
-    <h2>Data</h2>
+    <h1>Data</h1>
+    <div id="data"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        function getData(){
+            axios.get('https://dummyjson.com/carts').then((resp)=>{
+                let result = resp.data.carts
+                dataFunction(result)
+                console.log(result);
+            })
+        }
+        getData()
+        function dataFunction(data){
+          let carts = data
+          console.log(carts);
+
+          let row = ''
+        //   for(cart of carts){
+        //     row = row+`<h2>${cart.id}</h2><h2>${cart.products[0].title}</h2>`
+        //   }
+
+        for(i=0;i<carts.length-1;i++){
+            for(product of carts[i].products){
+
+                row = row + `<h2>${carts[i].id}</h2><h2>${product.title}</h2><h2>${product.id}</h2>`
+            }
+        }
+           
+          document.getElementById('data').innerHTML = row
+        }
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
